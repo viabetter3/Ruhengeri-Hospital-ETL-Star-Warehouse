@@ -1,0 +1,1 @@
+Repository initialization for automated project upload. This bootstrap file will be removed when the prepared project is committed.
