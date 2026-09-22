@@ -25,6 +25,8 @@ jobs:
           children = list(temp.iterdir())
           src = children[0] if len(children) == 1 and children[0].is_dir() else temp
           for item in src.iterdir():
+              if item.name == ".github":
+                  continue
               dst = root / item.name
               if item.is_dir():
                   shutil.copytree(item, dst, dirs_exist_ok=True)
